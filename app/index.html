@@ -23,7 +23,7 @@
 	<!-- Custom Browsers Color End -->
 
 	<link rel="stylesheet" href="css/main.min.css">
-
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 
 <body>
@@ -32,8 +32,16 @@
 <header class="top1">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md">Lorem ipsum dolor sit amet.`</div>
-			<div class="col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+			<div class="d-none d-sm-block col-sm-4 top-links-phone">
+				<a href="<?php echo $telephone; ?>" class="phone-top-links"><i class="fa fa-phone "></i><span> +7(702) 961-28-88</span></a>
+			</div>
+			<div class="col-sm-8 col-xs-12">
+				 <ul class="header-list-item top-links-log">
+					<li class='header-register'><a class="header_links" href="tel:<?php echo $text_register; ?>"><i class="fa fa-user-plus " ></i> <span class="">Регистрация</span></a></li>
+					<li class='header-login'><a class="header_links" href="tel:<?php echo $text_login; ?>"><i class="fa fa-user "></i> <span class="">Вход на сайт</span></a></li>
+					 </li>
+				 </ul>
+			</div>
 		</div>
 	</div>
 </header>
