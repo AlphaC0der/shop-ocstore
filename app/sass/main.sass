@@ -50,11 +50,6 @@ b, strong
 		font-size: 25px
 		vertical-align: bottom
 		line-height: 0.80
-.header-list-item
-	list-style: none
-	li
-		display: inline-block
-		padding-right: 5%
 .top-links-log 
 	padding-top: 10px
 	text-align: right
@@ -70,7 +65,14 @@ b, strong
 			&:hover
 				border-bottom: 1px solid #fff
 				transition: ease 0.8s 
-
++media-breakpoint-down(xs)
+	.header-list-item
+		padding: 5px
+		font-weight: normal
+		a.header_links
+			text-align: center
+		  font-size: 10px
+	
 		
 
 @import "media" // Always at the end
